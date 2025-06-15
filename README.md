@@ -37,10 +37,17 @@ uv pip install -r requirements.txt
 
 Create a `.env` file in the project root:
 
+## Example `.env`
+
 ```env
 MAPBOX_TOKEN=pk.eyJ...yourtoken...
-STYLES=mapbox/streets-v12,mapbox/outdoors-v12,mapbox/light-v11
+STYLES=mapbox/streets-v12,mapbox/light-v11
+START_POINT=
+END_POINT=
 ```
+
+- `START_POINT` and `END_POINT` are in the format: `longitude,latitude`
+- You can get coordinates from Google Maps or OpenStreetMap (right-click → "What's here?")
 
 - You can add as many styles as you want, separated by commas.
 - Use [your own custom style](https://studio.mapbox.com/) if you like.

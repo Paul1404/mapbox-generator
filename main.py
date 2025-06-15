@@ -9,7 +9,11 @@ from dotenv import load_dotenv
 load_dotenv()
 MAPBOX_TOKEN = os.environ.get("MAPBOX_TOKEN")
 STYLES = os.environ.get("STYLES")
+start_point_str = os.environ.get("START_POINT")
+end_point_str = os.environ.get("END_POINT")
 
+if not start_point_str or not end_point_str:
+    raise RuntimeError("Please set START_POINT and END_POINT in your .env file.")
 if not MAPBOX_TOKEN:
     raise RuntimeError("Please set MAPBOX_TOKEN in your .env file.")
 if not STYLES:
@@ -19,8 +23,8 @@ if not STYLES:
 style_ids = [s.strip() for s in STYLES.split(",") if s.strip()]
 
 # Coordinates
-start_point = (10.35874243459733, 50.01546037753678)
-end_point = (10.351722294449544, 50.012869473743834)
+start_point = tuple(map(float, start_point_str.split(",")))
+end_point = tuple(map(float, end_point_str.split(",")))
 
 # Get route from Directions API
 directions_url = (
