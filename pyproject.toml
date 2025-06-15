@@ -1,7 +1,7 @@
 [project]
 name = "mapbox-generator"
 version = "0.1.0"
-description = "Add your description here"
+description = "Generate beautiful static route maps with Mapbox Static Images API, perfect for banners, flyers, or web use."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
