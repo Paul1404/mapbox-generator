@@ -99,7 +99,7 @@ STYLES=mapbox/streets-v12,mapbox/light-v11,paulcustom=citrus4787/yourcustomid
 
 ## License
 
-MIT
+[MIT License](https://github.com/Paul1404/mapbox-generator/blob/main/LICENSE)
 
 ---
 
@@ -108,4 +108,3 @@ MIT
 - [Mapbox Static Images API](https://docs.mapbox.com/api/maps/static-images/)
 - [Mapbox Directions API](https://docs.mapbox.com/api/navigation/directions/)
 - [python-dotenv](https://pypi.org/project/python-dotenv/)
-```
