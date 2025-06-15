@@ -71,12 +71,10 @@ banner-map_light-v11_20240615_153000.png
 
 ---
 
-## Configuration
+## Advanced Configuration
 
-- **Route start/end:**  
-  Edit the `start_point` and `end_point` variables in `main.py` to your desired coordinates.
 - **Route color/width:**  
-  Change the `geojson` section in `main.py` for your club’s branding.
+  Change the `geojson` section in `main.py` for your branding.
 - **Markers:**  
   Uses a red circle for start and a red star for finish by default.  
   You can use [custom marker icons](https://docs.mapbox.com/api/maps/static-images/#custom-marker-icons) if you wish.
